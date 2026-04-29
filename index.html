@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 포트폴리오</title>
+    <title>권지연 | Data & Service Portfolio</title>
     <!-- Pretendard 폰트 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
     <!-- FontAwesome 아이콘 -->
@@ -11,40 +11,59 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <div class="logo">PORTFOLIO</div>
+            <div class="logo">JIYEON.</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <button id="theme-toggle" aria-label="다크모드 전환"><i class="fas fa-moon"></i></button>
         </div>
     </nav>
 
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <div class="container">
-                <h1>안녕하세요, <span class="highlight">끊임없이 성장하는 [이름]</span>입니다.</h1>
-                <p>AI를 활용하여 효율적인 솔루션을 만드는 프롬프트 엔지니어이자 빌더입니다.</p>
-                <a href="#projects" class="btn">프로젝트 보기</a>
+            <div class="container hero-inner">
+                <p class="hero-eyebrow">Data · Service Planning · AI</p>
+                <h1>안녕하세요,<br>데이터로 문제를 정의하고<br>서비스로 연결하는 <span class="highlight">권지연</span>입니다.</h1>
+                <p class="hero-sub">데이터 분석, 서비스 기획, AI 활용을 바탕으로 사용자의 문제를 구조화하고<br>실행 가능한 해결책으로 만드는 데 관심이 있습니다.</p>
+                <a href="#projects" class="btn">프로젝트 보기 <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
         <!-- About Me Section -->
         <section id="about" class="container">
-            <h2 class="section-title">About Me</h2>
+            <p class="section-eyebrow">About Me</p>
+            <h2 class="section-title">데이터로 문제를 풀고, 서비스로 잇습니다.</h2>
             <div class="about-content">
-                <div class="about-img">이미지 영역</div>
+                <div class="about-img">
+                    <i class="fas fa-user"></i>
+                </div>
                 <div class="about-text">
-                    <p><strong>생년월일:</strong> 19XX.XX.XX</p>
-                    <p><strong>학력:</strong> XX대학교 XX전공</p>
-                    <p><strong>자격증:</strong> 정보처리기사, SQLD 등</p>
-                    <p>여기에 본인의 상세한 자기소개를 작성하세요. AI를 활용한 문제 해결에 관심이 많습니다.</p>
+                    <p class="about-lead">
+                        저는 데이터를 단순히 분석하는 것에 그치지 않고, 분석 결과를 바탕으로 사용자의 문제를 정의하고
+                        실제 서비스나 전략으로 연결하는 과정에 관심이 있습니다.
+                        SQL과 Python을 활용한 데이터 분석 경험을 쌓고 있으며,
+                        AI 도구를 함께 활용해 문제 해결과 기획의 효율을 높이는 방법을 탐색하고 있습니다.
+                    </p>
+                    <p class="about-sub">
+                        데이터를 통해 문제를 발견하고, 사용자의 관점에서 해결 방향을 설계하며,
+                        AI와 다양한 도구를 활용해 아이디어를 빠르게 실험하고 구체화하는 역량을 키워가고 있습니다.
+                    </p>
+
+                    <ul class="about-meta">
+                        <li><span class="meta-label">Name</span><span class="meta-value">권지연</span></li>
+                        <li><span class="meta-label">Major</span><span class="meta-value">데이터사이언스 전공</span></li>
+                        <li><span class="meta-label">Interest</span><span class="meta-value">데이터 분석 · 서비스 기획 · IT 기획 · AI 활용</span></li>
+                        <li><span class="meta-label">Certificate</span><span class="meta-value">SQLD, ADsP 취득 준비 중</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -52,41 +71,98 @@
         <!-- Skills Section -->
         <section id="skills" class="bg-light">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
+                <p class="section-eyebrow">Skills</p>
+                <h2 class="section-title">분석부터 기획까지, 활용 가능한 도구들</h2>
                 <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5"></i> HTML/CSS</div>
-                    <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="skill-card"><i class="fas fa-robot"></i> AI Prompting</div>
-                    <div class="skill-card"><i class="fas fa-tools"></i> No-Code Tools</div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>SQL</h3>
+                        <p>데이터 조회, 집계, JOIN, 조건별 분석 쿼리 작성</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                        <p>Pandas 기반 데이터 전처리 및 분석 코드 이해와 수정</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Data Analysis</h3>
+                        <p>데이터 기반 문제 정의, 인사이트 도출, 분석 결과 해석</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3>R / ggplot</h3>
+                        <p>R 기초 문법, tidyverse, ggplot을 활용한 시각화</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Service Planning</h3>
+                        <p>사용자 문제 정의, MVP 설계, 기능 우선순위 정리</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Tooling</h3>
+                        <p>AI 도구를 활용한 기획 보조, 분석 보조, 문서화 효율화</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h3>HTML / CSS</h3>
+                        <p>정적 웹페이지 구조 작성 및 기본 스타일링</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>간단한 인터랙션 구현 및 프론트엔드 동작 이해</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="container">
-            <h2 class="section-title">Projects</h2>
+            <p class="section-eyebrow">Projects</p>
+            <h2 class="section-title">데이터·기획·AI를 연결한 작업들</h2>
             <div id="project-container" class="project-grid">
-                <!-- 여기에 JSON 데이터로 카드가 생성될 예정입니다 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>샘플 프로젝트</h3>
-                        <p>프로젝트에 대한 간단한 설명이 들어갑니다.</p>
-                        <span class="tag">HTML</span> <span class="tag">CSS</span>
-                    </div>
-                </div>
+                <!-- script.js의 projects 배열로 동적 렌더링됩니다 -->
             </div>
         </section>
 
-        <!-- Experience Section (Timeline) -->
+        <!-- Experience Section -->
         <section id="experience" class="bg-light">
             <div class="container">
-                <h2 class="section-title">Experience</h2>
+                <p class="section-eyebrow">Experience</p>
+                <h2 class="section-title">학습과 프로젝트로 쌓아온 경험</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="date">2023.01 - 현재</div>
-                        <div class="content">
-                            <h3>OO 동아리 활동</h3>
-                            <p>AI 활용 웹 서비스 기획 및 제작 프로젝트 진행</p>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - 현재</div>
+                        <div class="timeline-content">
+                            <h3>데이터사이언스 전공</h3>
+                            <p>데이터 분석, 머신러닝, 데이터베이스, 빅데이터 처리 등 데이터 기반 문제 해결 역량을 학습했습니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>데이터 분석 프로젝트 수행</h3>
+                            <p>Amazon 판매 데이터, 공공자전거 데이터 등 다양한 데이터를 활용해 분석 주제를 정의하고 인사이트를 도출했습니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - 2026</div>
+                        <div class="timeline-content">
+                            <h3>웹 서비스 기획 및 프론트엔드 프로젝트</h3>
+                            <p>생산성 관리 웹앱과 모각코 서비스 등 사용자 문제를 기반으로 한 웹 서비스 기획 및 화면 설계를 경험했습니다.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content">
+                            <h3>AI 활용 서비스 아이디어톤 / 프로젝트</h3>
+                            <p>AI 도구와 API를 활용해 서비스 기획, 분석 자동화, PoC 제작 가능성을 검토했습니다.</p>
                         </div>
                     </div>
                 </div>
@@ -95,17 +171,33 @@
 
         <!-- Contact Section -->
         <section id="contact" class="container">
-            <h2 class="section-title">Contact</h2>
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">함께 이야기 나누고 싶다면</h2>
+            <p class="contact-desc">데이터 분석, 서비스 기획, AI 활용에 대한 협업이나 대화는 언제든 환영합니다.</p>
             <div class="contact-links">
-                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://github.com"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:email@example.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">email@example.com</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com</span>
+                </a>
+                <a href="#" class="contact-card">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="contact-label">Resume / Notion</span>
+                    <span class="contact-value">준비 중</span>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p>&copy; 2026 권지연. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
