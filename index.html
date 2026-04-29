@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 포트폴리오</title>
+    <!-- Pretendard 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <!-- FontAwesome 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>안녕하세요, <span class="highlight">끊임없이 성장하는 [이름]</span>입니다.</h1>
+                <p>AI를 활용하여 효율적인 솔루션을 만드는 프롬프트 엔지니어이자 빌더입니다.</p>
+                <a href="#projects" class="btn">프로젝트 보기</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">이미지 영역</div>
+                <div class="about-text">
+                    <p><strong>생년월일:</strong> 19XX.XX.XX</p>
+                    <p><strong>학력:</strong> XX대학교 XX전공</p>
+                    <p><strong>자격증:</strong> 정보처리기사, SQLD 등</p>
+                    <p>여기에 본인의 상세한 자기소개를 작성하세요. AI를 활용한 문제 해결에 관심이 많습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5"></i> HTML/CSS</div>
+                    <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="skill-card"><i class="fas fa-robot"></i> AI Prompting</div>
+                    <div class="skill-card"><i class="fas fa-tools"></i> No-Code Tools</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2 class="section-title">Projects</h2>
+            <div id="project-container" class="project-grid">
+                <!-- 여기에 JSON 데이터로 카드가 생성될 예정입니다 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>샘플 프로젝트</h3>
+                        <p>프로젝트에 대한 간단한 설명이 들어갑니다.</p>
+                        <span class="tag">HTML</span> <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Timeline) -->
+        <section id="experience" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">2023.01 - 현재</div>
+                        <div class="content">
+                            <h3>OO 동아리 활동</h3>
+                            <p>AI 활용 웹 서비스 기획 및 제작 프로젝트 진행</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
